@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLTCONCEITO - Loja Fitness Plus Size</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        /* Cabeçalho */
+        header {
+            background-color: #8b5c1e;
+            /* C08D4B */
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        header img {
+            height: 80px; /* Ajuste o tamanho da logo conforme necessário */
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+
+        /* Navegação */
+        nav {
+            background-color: #C08D4B;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Seção Principal - Produtos em Cards */
+        main {
+            padding: 2rem;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 1.5rem;
+        }
+        .card-content h3 {
+            margin: 0 0 1rem;
+            font-size: 1.5rem;
+            color: #264653;
+        }
+        .card-content p {
+            margin: 0 0 1rem;
+            font-size: 1rem;
+            color: #606060;
+        }
+        .card-content a {
+            text-decoration: none;
+            color: #e76f51;
+            font-weight: bold;
+        }
+
+        /* Seção de Destaque */
+        .benefits {
+            background-color: #e9c46a;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .benefits ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .benefits li {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #264653;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 3rem;
+        }
+        footer p {
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <img style="border-radius: 50%;" src="logo.jpg" alt="Logo BLTCONCEITO">
+        <div>
+            <h1>BLTCONCEITO</h1>
+            <p>Moda fitness com conforto e estilo para todos os tamanhos</p>
+        </div>
+    </header>
+
+    <!-- Barra de navegação -->
+    <nav>
+        <a href="#produtos">Produtos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <!-- Seção Principal com Cards -->
+    <main id="produtos">
+        <h2>Nossos Produtos</h2>
+        <div class="card-container">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300x300" alt="Conjunto Legging e Top">
+                <div class="card-content">
+                    <h3>Conjunto Legging e Top</h3>
+                    <p>Conjunto de legging e top ajustado para treinos de alta intensidade. Disponível em várias cores e tamanhos.</p>
+                    <a href="#">Ver mais detalhes</a>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300x300" alt="Camiseta Dry Fit">
+                <div class="card-content">
+                    <h3>Camiseta Dry Fit</h3>
+                    <p>Camiseta com tecido Dry Fit, ideal para alta performance, mantendo o corpo seco e confortável.</p>
+                    <a href="#">Ver mais detalhes</a>
+                </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300x300" alt="Short Fitness">
+                <div class="card-content">
+                    <h3>Short Fitness</h3>
+                    <p>Short fitness de cintura alta com tecido respirável, ideal para treinos e atividades ao ar livre.</p>
+                    <a href="#">Ver mais detalhes</a>
+                </div>
+            </div>
+            
+            <!-- Card 4 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300x300" alt="Jaqueta Esportiva">
+                <div class="card-content">
+                    <h3>Jaqueta Esportiva</h3>
+                    <p>Jaqueta leve e ajustável, perfeita para dias mais frios ou chuvosos. Disponível em diversos tamanhos.</p>
+                    <a href="#">Ver mais detalhes</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300x300" alt="Conjunto Legging e Top">
+                <div class="card-content">
+                    <h3>Conjunto Legging e Top</h3>
+                    <p>Conjunto de legging e top ajustado para treinos de alta intensidade. Disponível em várias cores e tamanhos.</p>
+                    <a href="#">Ver mais detalhes</a>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300x300" alt="Camiseta Dry Fit">
+                <div class="card-content">
+                    <h3>Camiseta Dry Fit</h3>
+                    <p>Camiseta com tecido Dry Fit, ideal para alta performance, mantendo o corpo seco e confortável.</p>
+                    <a href="#">Ver mais detalhes</a>
+                </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300x300" alt="Short Fitness">
+                <div class="card-content">
+                    <h3>Short Fitness</h3>
+                    <p>Short fitness de cintura alta com tecido respirável, ideal para treinos e atividades ao ar livre.</p>
+                    <a href="#">Ver mais detalhes</a>
+                </div>
+            </div>
+            
+            <!-- Card 4 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300x300" alt="Jaqueta Esportiva">
+                <div class="card-content">
+                    <h3>Jaqueta Esportiva</h3>
+                    <p>Jaqueta leve e ajustável, perfeita para dias mais frios ou chuvosos. Disponível em diversos tamanhos.</p>
+                    <a href="#">Ver mais detalhes</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Seção de Destaque -->
+    <section class="benefits">
+        <h2>Por que escolher nossa loja?</h2>
+        <ul>
+            <li>Materiais de alta qualidade que garantem conforto</li>
+            <li>Variedade de tamanhos plus size</li>
+            <li>Design moderno e ajustado para todos os corpos</li>
+            <li>Entrega rápida e atendimento personalizado</li>
+        </ul>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Contato: contato@bltconceito.com | Telefone: (11) 98765-4321</p>
+        <p>&copy; 2024 BLTCONCEITO. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
